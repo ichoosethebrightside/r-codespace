@@ -1,6 +1,15 @@
 {
     "name": "RStudio Environment",
-    "image": "rocker/rstudio:latest",
+    "image": "earthlabcu/mefa_2024:latest",
+    "settings": {
+        "r.plot.devArgs": {
+              "width": 1200,
+              "height": 500
+            },
+        "workbench.editorAssociations": {
+              "*.qmd": "quarto.visualEditor"
+            }
+    },
     "extensions": [
         "REditorSupport.r",
         "quarto.quarto"
